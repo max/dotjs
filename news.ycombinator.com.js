@@ -16,7 +16,7 @@ $('textarea').css({
 });
 
 $('span.comment').css({
-  fontFamily: 'TisaCompPro',
+  fontFamily: 'TisaCompPro, Georgia',
   fontSize: '1.2em',
   lineHeight: '1.4em'
 });
