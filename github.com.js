@@ -3,8 +3,8 @@
 // Preview:
 // http://cl.ly/2I3R1P3N1W142f251r1p
 
-$('#dashboard .news').css('display', 'none');
-$('#dashboard .octofication').css('display', 'none');
+$('#dashboard .news').hide();
+$('#dashboard .octofication').hide();
 
 $('#dashboard .repos')
   .css('box-sizing', 'border-box')
@@ -15,3 +15,5 @@ $('#dashboard .filter_input')
   .css('font-size', '24px')
   .css('padding', '8px 8px 6px')
   .css('width', '100%');
+
+$('#footer').hide();
