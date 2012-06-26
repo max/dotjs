@@ -6,7 +6,6 @@
 $('#dashboard .news').css('display', 'none');
 $('#dashboard .octofication').css('display', 'none');
 
-
 $('#dashboard .repos')
   .css('box-sizing', 'border-box')
   .css('width', '100%');
