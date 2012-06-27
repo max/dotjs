@@ -1,4 +1,8 @@
-// Hide the news since you can't filter it
+// Filter the noise:
+//
+// * Hide the footer
+// * Hide the news broadcasts
+// * Toggle the news feed visibility with `q`
 //
 // Preview:
 // http://cl.ly/1G3O0T311a2q1Y1D1C0k
