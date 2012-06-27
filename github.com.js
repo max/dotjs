@@ -1,19 +1,20 @@
 // Hide the news since you can't filter it
 //
 // Preview:
-// http://cl.ly/2I3R1P3N1W142f251r1p
+// http://cl.ly/1G3O0T311a2q1Y1D1C0k
 
-$('#dashboard .news').hide();
-$('#dashboard .octofication').hide();
+var quietStyles = '<style type="text/css">' +
+                  '  #footer { display: none; }' +
+                  '  #dashboard .octofication { display: none; } ' +
+                  '  .quiet #dashboard .news { display: none; } ' +
+                  '  .quiet #dashboard .repos { box-sizing: border-box; width: 100%; } ' +
+                  '  .quiet #dashboard .filter_input { border-radius: 4px; font-size: 24px; padding: 8px 8px 6px; width: 100%; } ' +
+                  '</style>'
 
-$('#dashboard .repos')
-  .css('box-sizing', 'border-box')
-  .css('width', '100%');
+$(quietStyles).appendTo('body');
 
-$('#dashboard .filter_input')
-  .css('border-radius', '4px')
-  .css('font-size', '24px')
-  .css('padding', '8px 8px 6px')
-  .css('width', '100%');
-
-$('#footer').hide();
+$(document).keypress(function(e) {
+  if (e.which == 113) {
+    $('body').toggleClass('quiet');
+  }
+});
